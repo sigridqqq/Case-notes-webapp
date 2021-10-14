@@ -16,7 +16,7 @@
                 </div>
             </div>
 
-            <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+            <!-- <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
                 <base-dropdown tag="li" class="nav-item">
                     <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
                         <i class="ni ni-collection d-lg-none"></i>
@@ -27,7 +27,7 @@
                     <router-link to="/login" class="dropdown-item">Login</router-link>
                     <router-link to="/register" class="dropdown-item">Register</router-link>
                 </base-dropdown>
-            </ul>
+            </ul> -->
         </base-nav>
     </header>
 </template>

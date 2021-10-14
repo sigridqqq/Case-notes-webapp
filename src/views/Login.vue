@@ -36,7 +36,9 @@
                                     Remember me
                                 </base-checkbox> -->
                                 <div class="text-center" id="signin-button">
+                                    <!-- <router-link to='/form' :key="$route.form"> -->
                                     <input class="btn btn-success" type="submit" value="Sign In">
+                                    <!-- </router-link> -->
                                     <!-- <base-button type="primary" class="my-4" v-on:click="authenticate">Sign In</base-button> -->
                                 </div>
                             </form>
@@ -54,7 +56,13 @@
         </div>
     </section>
 </template>
+
 <script>
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
+
 export default {
     name: 'signin-button',
     data() {},
@@ -70,12 +78,10 @@ export default {
             else {
                 console.log("Login successful")
                 //Change landing page
-                this.$router.push('/register') 
+                this.$router.push('form')
             }
         }
     }
 }
 
 </script>
-<style>
-</style>
