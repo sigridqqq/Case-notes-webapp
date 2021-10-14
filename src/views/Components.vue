@@ -13,6 +13,7 @@
     </div>
 </template>
 <script>
+
 import Hero from "./components/Hero";
 import BasicElements from "./components/BasicElements";
 import Inputs from "./components/Inputs";

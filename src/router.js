@@ -1,3 +1,4 @@
+
 import Vue from "vue";
 import Router from "vue-router";
 import AppHeader from "./layout/AppHeader";
@@ -7,12 +8,18 @@ import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
 import Register from "./views/Register.vue";
 import Profile from "./views/Profile.vue";
+import Hero from "./views/components/Hero.vue"
 
 Vue.use(Router);
 
 export default new Router({
-  linkExactActiveClass: "active",
   routes: [
+    {
+      path: "/",
+      redirect: {
+        name: "login"
+      }
+    },
     {
       path: "/",
       name: "components",
@@ -56,6 +63,14 @@ export default new Router({
         header: AppHeader,
         default: Profile,
         footer: AppFooter
+      }
+    },
+    {
+      path: "/form",
+      name: "form",
+      components: {
+        header: AppHeader,
+        default: Components
       }
     }
   ],
