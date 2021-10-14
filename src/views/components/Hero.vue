@@ -41,13 +41,11 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-7 order-lg-3">
                                 <span></span>
-                                <div>
                                     <br><br>
                                     <base-button type="default" class="mr-4">First Session</base-button>
-                                    <base-button type="default" class="mr-4">Subsequent Sessions</base-button> 
-                                    <base-button type="default" class="mr-4">Annex</base-button> 
+                                    <base-button type="default" class="mr-4">Subsequent Sessions</base-button>
+                                    <base-button type="default" class="mr-4">Annex</base-button>
                                     <!-- toggle between the sessions -->
-                                </div>
                             </div>
                         </div>
                         <!-- form start -->
@@ -257,6 +255,17 @@
                         <a href="#">Submit</a>
                     </div>
                     <br>
+                    <div class="text-center mt-5">
+                            <h2><strong>Annex</strong></h2>
+                            <br><br>
+                    </div>
+                    <div>
+                            <h2 class="heading-title text-warning mb-0">Obeservations of Presentation</h2>
+                            <p>Following is a guide for the observable information of the client. </p>
+                            <img width="930px" src="./ANNEX1.png" />
+                            <img width="930px" src="./ANNEX2.png" />
+                            <img width="930px" src="./ANNEX3.png" />
+                    </div>
                 </card>
             </div>
         </section>
@@ -267,4 +276,13 @@
 export default {};
 </script>
 <style>
+#outer
+{
+    width:100%;
+    text-align: center;
+}
+.inner
+{
+    display: inline-block;
+}
 </style>
