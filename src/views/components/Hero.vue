@@ -102,7 +102,7 @@
                                 </div>      
                             </div>
                         </div>
-                        <br><br>
+                        <br><br><br>
                         <div>
                             <div>
                                 <h2 class="heading-title text-warning mb-0">Session Information</h2>
@@ -134,23 +134,24 @@
                                         <base-input placeholder="Counsellor(s)"></base-input>
                                     </div>
                                 </div>
-                                <br>
+                                <br><br>
                                 <div>
-                                    <h5><u>Observations of Presentation</u></h5>
+                                    <h5 class="heading-title text-warning mb-0">Observations of Presentation</h5>
+                                    <br>
                                     <textarea name="obsOfPresentation" row=100 cols=95></textarea>
                                 </div>      
                             </div>
                         </div>
-                        <br>
+                        <br><br>
                         <div>
                             <div>
                                 <div>
-                                    <h5><u>Counselling Goals</u></h5>
+                                    <h5 class="heading-title text-warning mb-0">Counselling Goals</h5>
                                     <p>List down client’s counselling/ therapy goals (mutually agreed) to be achieved for counselling and/or during the current session.</p>
                                     <textarea name="counsellingGoals" row=10 cols=95></textarea>
-                                    <br><br>
+                                    <br><br><br>
 
-                                    <h5><u>Details Of Session</u></h5>
+                                    <h5 class="heading-title text-warning mb-0">Details Of Session</h5>
                                     <p>Details of the issues discussed during the session. Background information should include
                                         <ul>
                                             <li>family/ childhood background and issues, </li>
@@ -165,23 +166,23 @@
                                         </ul>
                                     </p>
                                     <textarea name="detailsOfSession" row=10 cols=95></textarea>
-                                    <br><br>
+                                    <br><br><br>
 
-                                    <h5><u>Case Conceptualisation</u></h5>
+                                    <h5 class="heading-title text-warning mb-0">Case Conceptualisation</h5>
                                     <p>Your assessment of the client’s key underlying issues, obstacles that prevent him / her from resolving the issues, factors that have contributed to his / her progress, personal strengths that could be leveraged to help client manage his / her issues better, perceived social support network to help client manage presenting problem(s), any suspected psychological conditions that the client may be presenting, etc.</p>
                                     <textarea name="caseConceptualisation" v-model.lazy.trim="textAreaValue" row=10 cols=95></textarea>
-                                    <br><br>
+                                    <br><br><br>
 
-                                    <h5><u>Intervention(s) provided</u></h5>
+                                    <h5 class="heading-title text-warning mb-0">Intervention(s) provided</h5>
                                     <p><em>Brief but clear summary of the intervention work that has been undertaken with the client during the session (e.g., what were the proposed plans that were agreed upon, any homework assigned to the client, etc.). If client expressed suicidal ideation, include suicide safety plan.</em></p>
                                     <textarea name="interventionsProvided" row=10 cols=95></textarea>
-                                    <br><br>
+                                    <br><br><br>
 
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <h5><u>Suicide Risk Considerations (If Relevant)</u></h5>
+                            <h5 class="heading-title text-warning mb-0">Suicide Risk Considerations (If Relevant)</h5>
                             <p>Indicate clients’ responses during current session, if applicable.<br>In an event that client presents with active suicidal ideation during the current session, please refer client to a Medical Centre immediately. Please ensure the safety of the client before reaching out to your Parac TL and/or EBSC, if in doubt.</p>
                             <h5>1. Intent</h5>
                             <p>Verbalises thoughts of suicide</p>
@@ -222,7 +223,7 @@
                         </div>
                         <br><br>
                         <div>
-                            <h5><u>Follow-up Plans</u></h5>
+                            <h5 class="heading-title text-warning mb-0">Follow-up Plans</h5>
                             <p>Indicate your follow-up plans for the case.</p>
                             <h6><u>Case management:</u></h6>
                             <p><i>To update or reach out to the following:</i></p>
@@ -233,18 +234,18 @@
                                 <base-checkbox class="mb-3">Other agencies</base-checkbox>
                             </div>
                             <p><i>Apart from suicide risk, the following are common areas of update (subjected to client’s consent): </i></p>
-                            <h6> - Mental health condition</h6>
-                            <h6> -  Coping strategies</h6>
-                            <h6> - Recommended work arrangements</h6>
+                            <p> - Mental health condition</p>
+                            <p> -  Coping strategies</p>
+                            <p> - Recommended work arrangements</p>
                             <p>Note: Advocacy for posting is discouraged during counselling sessions. Please contact EBSC for further discussion prior to updating supervisors if a change in posting is recommended. </p>
-                            <h6><u>Follow-Up Plans:</u></h6>
+                            <br><h6><u>Follow-Up Plans:</u></h6>
                             <p><i>Include next date of session, if applicable. <br>If no follow up is required, state reasons for closure. <br>If case is required for handover, please append handover form upon submission of case notes. </i></p>
                             <textarea name="followUpPlans" row=100 cols=95></textarea>
                         </div>
-                        <br><br>
+                        <br><br><br>
                         <div>
-                            <h5><u>Summary</u></h5>
-                            <h6>Report Prepared By:</h6>
+                            <h5 class="heading-title text-warning mb-0">Summary</h5>
+                            <p><strong>Report Prepared By:</strong></p>
                             <base-input placeholder="Rank/Name"></base-input>
                             <base-input placeholder="Date of Report"></base-input>
                             <base-input placeholder="Signature"></base-input>
