@@ -39,12 +39,13 @@
                 <card shadow class="card-profile mt--300" no-body>
                     <div class="px-4">
                         <div class="row justify-content-center">
-                            <div class="col-lg-5 order-lg-3">
+                            <div class="col-lg-7 order-lg-3">
                                 <span></span>
                                 <div>
                                     <br><br>
-                                    <base-button type="info" class="mr-4">First Session</base-button>
-                                    <base-button type="default" class="float-right">Subsequent Sessions</base-button> 
+                                    <base-button type="default" class="mr-4">First Session</base-button>
+                                    <base-button type="default" class="mr-4">Subsequent Sessions</base-button> 
+                                    <base-button type="default" class="mr-4">Annex</base-button> 
                                     <!-- toggle between the sessions -->
                                 </div>
                             </div>
@@ -136,7 +137,7 @@
                                 <br>
                                 <div>
                                     <h5><u>Observations of Presentation</u></h5>
-                                    <textarea name="textarea" v-model.lazy.trim="textAreaValue" row=100 cols=95></textarea>
+                                    <textarea name="obsOfPresentation" row=100 cols=95></textarea>
                                 </div>      
                             </div>
                         </div>
@@ -146,7 +147,7 @@
                                 <div>
                                     <h5><u>Counselling Goals</u></h5>
                                     <p>List down client’s counselling/ therapy goals (mutually agreed) to be achieved for counselling and/or during the current session.</p>
-                                    <textarea name="textarea" v-model.lazy.trim="textAreaValue" row=10 cols=95></textarea>
+                                    <textarea name="counsellingGoals" row=10 cols=95></textarea>
                                     <br><br>
 
                                     <h5><u>Details Of Session</u></h5>
@@ -163,17 +164,17 @@
                                             <li>mental health history (incl. self-harm and suicide behaviours)</li>
                                         </ul>
                                     </p>
-                                    <textarea name="textarea" v-model.lazy.trim="textAreaValue" row=10 cols=95></textarea>
+                                    <textarea name="detailsOfSession" row=10 cols=95></textarea>
                                     <br><br>
 
                                     <h5><u>Case Conceptualisation</u></h5>
                                     <p>Your assessment of the client’s key underlying issues, obstacles that prevent him / her from resolving the issues, factors that have contributed to his / her progress, personal strengths that could be leveraged to help client manage his / her issues better, perceived social support network to help client manage presenting problem(s), any suspected psychological conditions that the client may be presenting, etc.</p>
-                                    <textarea name="textarea" v-model.lazy.trim="textAreaValue" row=10 cols=95></textarea>
+                                    <textarea name="caseConceptualisation" v-model.lazy.trim="textAreaValue" row=10 cols=95></textarea>
                                     <br><br>
 
                                     <h5><u>Intervention(s) provided</u></h5>
                                     <p><em>Brief but clear summary of the intervention work that has been undertaken with the client during the session (e.g., what were the proposed plans that were agreed upon, any homework assigned to the client, etc.). If client expressed suicidal ideation, include suicide safety plan.</em></p>
-                                    <textarea name="textarea" v-model.lazy.trim="textAreaValue" row=10 cols=95></textarea>
+                                    <textarea name="interventionsProvided" row=10 cols=95></textarea>
                                     <br><br>
 
                                 </div>
@@ -184,31 +185,31 @@
                             <p>Indicate clients’ responses during current session, if applicable.<br>In an event that client presents with active suicidal ideation during the current session, please refer client to a Medical Centre immediately. Please ensure the safety of the client before reaching out to your Parac TL and/or EBSC, if in doubt.</p>
                             <h5>1. Intent</h5>
                             <p>Verbalises thoughts of suicide</p>
-                            <textarea name="textarea" v-model.lazy.trim="textAreaValue" row=20 cols=95></textarea>
+                            <textarea name="intent1" row=20 cols=95></textarea>
                             <p>Ambivalence towards suicide</p>
-                            <textarea name="textarea" v-model.lazy.trim="textAreaValue" row=20 cols=95></textarea>
+                            <textarea name="intent2" row=20 cols=95></textarea>
                             <br><br>
                             <h5>2. Plans</h5>
                             <p>Explore about suicide (e.g., research)</p>
-                            <textarea name="textarea" v-model.lazy.trim="textAreaValue" row=20 cols=95></textarea>
+                            <textarea name="plan1" row=20 cols=95></textarea>
                             <p>Have concrete plans to attempt suicide</p>
-                            <textarea name="textarea" v-model.lazy.trim="textAreaValue" row=20 cols=95></textarea>
+                            <textarea name="plan2" row=20 cols=95></textarea>
                             <p>Have access to lethal means for suicide</p>
-                            <textarea name="textarea" v-model.lazy.trim="textAreaValue" row=20 cols=95></textarea>
+                            <textarea name="plan3" row=20 cols=95></textarea>
                             <br><br>
                             <h5>3. Resources</h5>
                             <p>Strength of social support</p>
-                            <textarea name="textarea" v-model.lazy.trim="textAreaValue" row=20 cols=95></textarea>
+                            <textarea name="resources1" row=20 cols=95></textarea>
                             <p>Problem solving skills</p>
-                            <textarea name="textarea" v-model.lazy.trim="textAreaValue" row=20 cols=95></textarea>
+                            <textarea name="resources2" row=20 cols=95></textarea>
                             <br><br>
                             <h5>4. Past Attempt</h5>
                             <p>History of past suicide attempts</p>
-                            <textarea name="textarea" v-model.lazy.trim="textAreaValue" row=20 cols=95></textarea>
+                            <textarea name="pastAttempt" row=20 cols=95></textarea>
                             <br><br>
                             <h5>5. Mental Health</h5>
                             <p>Presence of mental health illness</p>
-                            <textarea name="textarea" v-model.lazy.trim="textAreaValue" row=20 cols=95></textarea>
+                            <textarea name="mentalHealth" row=20 cols=95></textarea>
                             <br><br>
                             <h5>Overall Risk Level</h5>
                             <div class="col-lg-3 col-md-6">
@@ -238,7 +239,7 @@
                             <p>Note: Advocacy for posting is discouraged during counselling sessions. Please contact EBSC for further discussion prior to updating supervisors if a change in posting is recommended. </p>
                             <h6><u>Follow-Up Plans:</u></h6>
                             <p><i>Include next date of session, if applicable. <br>If no follow up is required, state reasons for closure. <br>If case is required for handover, please append handover form upon submission of case notes. </i></p>
-                            <textarea name="textarea" v-model.lazy.trim="textAreaValue" row=100 cols=95></textarea>
+                            <textarea name="followUpPlans" row=100 cols=95></textarea>
                         </div>
                         <br><br>
                         <div>
@@ -252,7 +253,7 @@
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                                        <a href="#">Submit</a>
+                        <a href="#">Submit</a>
                     </div>
                     <br>
                 </card>
