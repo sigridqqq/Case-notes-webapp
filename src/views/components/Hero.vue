@@ -41,18 +41,11 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-5 order-lg-3">
                                 <span></span>
-                                <div id="outer">
                                     <br><br>
-<<<<<<< Updated upstream
-                                    <base-button type="info" class="mr-4">First Session</base-button>
-                                    <base-button type="default" class="float-right">Subsequent Sessions</base-button> 
-=======
-                                    <div class="inner"><button type="default" class="mr-4">First Session</button></div>
-                                    <div class="inner"><button type="default" class="mr-4">Subsequent Sessions</button></div>
-                                    <div class="inner"><button type="default" class="mr-4">Annex</button></div>
->>>>>>> Stashed changes
+                                    <base-button type="default" class="mr-4">First Session</base-button>
+                                    <base-button type="default" class="mr-4">Subsequent Sessions</base-button>
+                                    <base-button type="default" class="mr-4">Annex</base-button>
                                     <!-- toggle between the sessions -->
-                                </div>
                             </div>
                         </div>
                         <!-- form start -->
@@ -243,8 +236,6 @@
                             <base-checkbox class="mb-3">Paracounsellor</base-checkbox>
                         </div>
                     </div>
-<<<<<<< Updated upstream
-=======
                     <div class="row justify-content-center">
                         <a href="#">Submit</a>
                     </div>
@@ -257,14 +248,10 @@
                     <div>
                             <h2 class="heading-title text-warning mb-0">Obeservations of Presentation</h2>
                             <p>Following is a guide for the observable information of the client. </p>
-                            <a href="https://github.com/wzker11/Case-notes-webapp/blob/master/public/">
-                                <img src="img/brand/ANNEX1.png">
-                            </a>
-                            <img src="" alt="Lamp" width="32" height="32">
-                            <img src="https://github.com/wzker11/Case-notes-webapp/blob/master/public/img/brand/ANNEX2.png" alt="Lamp" width="32" height="32">
-                            <img src="https://github.com/wzker11/Case-notes-webapp/blob/master/public/img/brand/ANNEX3.png" alt="Lamp" width="32" height="32">
+                            <img width="930px" src="./ANNEX1.png" />
+                            <img width="930px" src="./ANNEX2.png" />
+                            <img width="930px" src="./ANNEX3.png" />
                     </div>
->>>>>>> Stashed changes
                 </card>
             </div>
         </section>
