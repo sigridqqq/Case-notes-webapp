@@ -70,7 +70,7 @@ export default new Router({
       name: "form",
       components: {
         header: AppHeader,
-        default: Hero
+        default: Components
       }
     }
   ],
